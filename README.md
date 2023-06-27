@@ -130,9 +130,9 @@ namespace AzureServiceBusToSQL
 | WriteCsvToStorageAsBatch | yes  |  This entry is required. Calling out the feature to execute.
 | BatchSize | 201  |  Required to parse your file into batches. The  "1" is for the headers
 | Container | processed  |  This is the container name in the Blob.
-| FolderName | CSVFiles  |  This name is created in a the container within Blob Storage.
-| FileExtension | .csv  |  This name is created for the file extension whne writing to disk
-| ContentType | csv/text  |  Thsi is the name of the content type used to render the file
+| FolderName | CSVFiles  |  This name is created in the container within Blob Storage.
+| FileExtension | .csv  |  This name created for the file extension when writing to disk
+| ContentType | csv/text  |  This is the name of the content type used to render the file
 
 
 
