@@ -11,7 +11,7 @@
 
 5. Domain-Specific Customization: Configuration-driven development enables domain-specific customization by providing options and settings tailored to specific use cases. This empowers non-technical users or administrators to configure the application according to their specific requirements without the need for coding expertise
 # Example
-## Use case
+## Use case. ETL
 ![image](https://github.com/oigbokwe73/documentation/assets/15838780/d8e06136-f4a8-4bdf-8942-b21c62fed6e4)
 ## Code snippet
 Http Trigger 
