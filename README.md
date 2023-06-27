@@ -67,7 +67,63 @@ namespace AzureServiceBusToSQL
     }
 }
 ```
-Event Hub Trigger 
+
+#Data Flow Process
+
+```
+{
+  "Id": "UploadFileProcess",
+  "LineOfBusinessProcessData": [
+    {
+      "Key": "object",
+      "Type": "Xenhey.BPM.Core.Net6.Processes.ProcessData"
+    }
+  ],
+  "Type": "",
+  "DataFlowProcess": [
+    {
+      "Key": "CreateCSVBatchFilesForProcessing",
+      "Type": "Xenhey.BPM.Core.Net6.Processes.CSVProcess",
+      "Async": "false",
+      "IsEnable": "true",
+      "DataFlowProcessParameters": [
+        {
+          "Key": "StorageAccount",
+          "Value": "AzureWebJobsStorage"
+        },
+        {
+          "Key": "WriteCsvToStorageAsBatch",
+          "Value": "Yes"
+        },
+        {
+          "Key": "BatchSize",
+          "Value": "201"
+        },
+        {
+          "Key": "FolderName",
+          "Value": "CSVFiles"
+        },
+        {
+          "Key": "TableName",
+          "Value": "csvbatchfiles"
+        },
+        {
+          "Key": "Container",
+          "Value": "processed"
+        },
+        {
+          "Key": "FileExtension",
+          "Value": ".csv"
+        },
+         {
+          "Key": "ContentType",
+          "Value": "csv/text"
+        }	
+      ]
+    }
+  ]
+}
+```
 
 ```
 using System.Collections.Specialized;
