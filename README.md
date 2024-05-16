@@ -15,7 +15,7 @@
 ![image](https://github.com/oigbokwe73/documentation/assets/15838780/d8e06136-f4a8-4bdf-8942-b21c62fed6e4)
 ## Code snippet
 Http Trigger 
-```
+```c#
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.WebJobs;
